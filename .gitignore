@@ -1,0 +1,5 @@
+# Self-iterating local snippet libraries.
+# Keep these out of version control unless the user explicitly decides to
+# publish the living snippet history.
+references/glsl-snippets.md
+references/lua-snippets.md

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ring Filter Author"
+  short_description: "Create and modify Ring filter projects"
+  default_prompt: "Use $ring-filter-author to create or refine a Ring filter from a visual effect description."

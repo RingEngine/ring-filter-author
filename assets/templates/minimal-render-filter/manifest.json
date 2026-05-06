@@ -1,0 +1,30 @@
+{
+  "schemaVersion": "1.0.0",
+  "runtimeVersion": 1,
+  "outputSizeMode": "passive",
+  "metadata": {
+    "kind": "filter-src",
+    "id": "com.ring.template.minimal_render",
+    "name": "Minimal Render Filter",
+    "version": "1.0.0",
+    "description": "Single-pass render filter template."
+  },
+  "parameters": [
+    {
+      "id": "strength",
+      "label": "Strength",
+      "type": "float",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.5
+    }
+  ],
+  "passes": [
+    {
+      "id": "effect",
+      "type": "render",
+      "vertexShader": "shaders/fullscreen.vert.glsl",
+      "fragmentShader": "shaders/effect.frag.glsl"
+    }
+  ]
+}

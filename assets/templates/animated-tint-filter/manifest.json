@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "1.0.0",
+  "runtimeVersion": 1,
+  "outputSizeMode": "passive",
+  "runtimeHints": {
+    "frameInvalidation": "continuous"
+  },
+  "metadata": {
+    "kind": "filter-src",
+    "id": "com.ring.template.animated_tint",
+    "name": "Animated Tint Filter",
+    "version": "1.0.0",
+    "description": "Single-pass animated tint filter template."
+  },
+  "parameters": [
+    {
+      "id": "tintColor",
+      "label": "Tint Color",
+      "type": "vec4",
+      "semantic": "color4",
+      "default": [0.2, 0.65, 1.0, 0.35]
+    },
+    {
+      "id": "speed",
+      "label": "Speed",
+      "type": "float",
+      "min": 0.0,
+      "max": 4.0,
+      "default": 1.0
+    }
+  ],
+  "passes": [
+    {
+      "id": "animatedTint",
+      "type": "render",
+      "vertexShader": "shaders/fullscreen.vert.glsl",
+      "fragmentShader": "shaders/animated_tint.frag.glsl"
+    }
+  ]
+}
